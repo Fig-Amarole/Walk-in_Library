@@ -10,6 +10,16 @@ namespace Walk_in_Library
     {
         static void Main(string[] args)
         {
+            WalkInLibrary walkInLibrary = new WalkInLibrary();
+
+            // Add some books to the library and print out the Book table to console
+
+
+            // Modify some books in the library and print out the Book table to console
+
+
+            // Remove some books in the library and print out the Book table to console
+
         }
     }
 }

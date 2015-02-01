@@ -53,6 +53,7 @@
     <Compile Include="Book.cs">
       <DependentUpon>DatabaseOverlord.tt</DependentUpon>
     </Compile>
+    <Compile Include="BookExtend.cs" />
     <Compile Include="DatabaseOverlord.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -68,8 +69,10 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DatabaseOverlord.edmx</DependentUpon>
     </Compile>
+    <Compile Include="DatabaseWhisperer.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WalkInLibrary.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
