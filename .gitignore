@@ -266,3 +266,5 @@ pip-log.txt
 
 packages/
 *.sql
+Walk-in_Library/Book.cs
+Walk-in_Library/DatabaseOverlord.cs
