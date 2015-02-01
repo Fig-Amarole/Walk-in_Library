@@ -269,3 +269,4 @@ Walk-in_Library/Book.cs
 Walk-in_Library/DatabaseOverlord.Context.cs
 Walk-in_Library/DatabaseOverlord.cs
 *.sql
+Walk-in_Library/DatabaseOverlord.Designer.cs
