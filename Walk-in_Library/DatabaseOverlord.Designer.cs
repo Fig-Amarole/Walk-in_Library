@@ -1,4 +1,4 @@
-﻿// T4 code generation is enabled for model 'C:\Users\David\Documents\GitHub\Walk-in_Library\Walk-in_Library\DatabaseOverlord.edmx'. 
+﻿// T4 code generation is enabled for model 'C:\Users\Jeffrey\Documents\GitHub\Walk-in_Library\Walk-in_Library\DatabaseOverlord.edmx'. 
 // To enable legacy code generation, change the value of the 'Code Generation Strategy' designer
 // property to 'Legacy ObjectContext'. This property is available in the Properties Window when the model
 // is open in the designer.
