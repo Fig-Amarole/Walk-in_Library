@@ -259,3 +259,13 @@ pip-log.txt
 
 #Mr Developer
 .mr.developer.cfg
+
+##########
+# Custom
+##########
+
+packages/
+Walk-in_Library/Book.cs
+Walk-in_Library/DatabaseOverlord.Context.cs
+Walk-in_Library/DatabaseOverlord.cs
+*.sql

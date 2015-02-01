@@ -32,7 +32,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.1\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.1\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
@@ -43,6 +50,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Book.cs">
+      <DependentUpon>DatabaseOverlord.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DatabaseOverlord.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DatabaseOverlord.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DatabaseOverlord.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DatabaseOverlord.tt</DependentUpon>
+    </Compile>
     <Compile Include="DatabaseOverlord.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -57,9 +77,26 @@
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>DatabaseOverlord.Designer.cs</LastGenOutput>
     </EntityDeploy>
+    <None Include="DatabaseOverlord.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>DatabaseOverlord.Context.cs</LastGenOutput>
+      <DependentUpon>DatabaseOverlord.edmx</DependentUpon>
+    </None>
     <None Include="DatabaseOverlord.edmx.diagram">
       <DependentUpon>DatabaseOverlord.edmx</DependentUpon>
     </None>
+    <None Include="DatabaseOverlord.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>DatabaseOverlord.cs</LastGenOutput>
+      <DependentUpon>DatabaseOverlord.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DatabaseOverlord.edmx.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
