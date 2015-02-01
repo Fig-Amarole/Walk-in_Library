@@ -14,7 +14,7 @@ namespace Walk_in_Library
             StringBuilder output = new StringBuilder();
 
             // Append each property to output
-            output.AppendFormat("Id == %1; ", Id.ToString());
+            output.AppendFormat("Id=={0}; Title=={1}", Id.ToString(), Title.ToString());
 
             // Return the output
             return output.ToString();

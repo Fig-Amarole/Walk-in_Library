@@ -13,13 +13,21 @@ namespace Walk_in_Library
             WalkInLibrary walkInLibrary = new WalkInLibrary();
 
             // Add some books to the library and print out the Book table to console
+            Book nutmegBook = new Book();
+            nutmegBook.Title = "Nutmeg Cookbook: All About the Nutmeg";
 
+            walkInLibrary.AddBook(nutmegBook);
+
+            walkInLibrary.PrintBooksTable();
 
             // Modify some books in the library and print out the Book table to console
 
 
             // Remove some books in the library and print out the Book table to console
 
+
+
+            Console.ReadLine();
         }
     }
 }
